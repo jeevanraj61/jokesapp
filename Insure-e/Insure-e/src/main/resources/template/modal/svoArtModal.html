@@ -1,0 +1,34 @@
+
+<div>
+	<div class="modal-header">
+		<h4 style="color:#00667f" class="modal-title">{{vm.entity.modalHeader}}</h4>
+	</div>
+
+	<div class="modal-body">
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label for="subject" class="col-sm-7 control-label " >Subject :</label>
+				<div class="col-sm-5">
+					<input id="subject" class="form-control input-sm" type="text" ng-model="vm.entity.s" placeholder="Add Subject"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="verb" class="col-sm-7 control-label" >Verb :</label>
+				<div class="col-sm-5">
+					<input id="verb" class="form-control input-sm" type="text" ng-model="vm.entity.v" placeholder="Add Verb"/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="object" class="col-sm-7 control-label" >Object :</label>
+				<div class="col-sm-5">
+					<input id="object" class="form-control input-sm" type="text" ng-model="vm.entity.o" placeholder="Add Object"/>
+				</div>
+			</div>												
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button  style="color:#00667f" class="btn  border-radius-small glow-img" ng-click="vm.save()">Save</button>
+		<button style="color:#00667f"  class="btn  border-radius-large glow-img" ng-click="$close()">Cancel</button>
+	</div>
+</div>
+

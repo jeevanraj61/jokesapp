@@ -1,0 +1,114 @@
+.dropdown-submenu {
+    position: relative;
+}
+
+.top-buffer { margin-top:40px; }
+
+.w3-grey,.w3-hover-grey:hover,.w3-gray,.w3-hover-gray:hover{color:#000!important;background-color:#bbb!important}
+
+P {
+    background-color: lightgrey;
+    width: 300px;
+   cursor: pointer;
+    padding: 25px;
+    margin: 25px;
+}
+
+.grid {
+  width: 500px;
+  height: 250px;
+}
+
+
+.square {
+    height: 200px;
+    width: 250px;
+}
+
+.success{
+	color:#00667f;
+	background: #c8dcb4;
+	margin-left: 4px;
+	padding: 15px;
+	font-weight: bold !important;
+}
+
+label{
+	color: #00667f;
+}
+
+.margin-bottom {
+margin-bottom:15px;}
+
+.glow-img:hover {
+ color: #00667f;
+ box-shadow: 0 10px 50px #00667f;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    color: #00667f;
+      box-shadow: 0 10px 25px #00667f;
+   
+    background-color: lightgrey;
+     width: 300px;
+   cursor: pointer;
+    padding: 25px;
+    margin: 25px;
+
+}
+
+
+@font-face {
+	font-family: 'DaimlerCS-Regular';
+	src: url('fonts/daimler-cs-regular-eot.eot');
+	src: url('fonts/daimler-cs-regular-eot.eot?#iefix')
+		format('embedded-opentype'), url('fonts/daimler-cs-regular-woff.woff')
+		format('woff'), url('fonts/daimler-cs-regular-ttf.ttf')
+		format('truetype'),
+		url('fonts/daimler-cs-regular-svg.svg#DaimlerCS-Regular')
+		format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+span {
+	font-size:150%
+}	
+img {
+	vertical-align: middle;
+	border: 0;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+	
+}
+
+
+
+
+
+
+
+
+
+
+

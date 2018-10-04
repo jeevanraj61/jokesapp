@@ -1,0 +1,36 @@
+<div ng-controller="SvoArtSetupController as vm">
+<header>
+	<div class="container-fluid  w3-grey">
+		<div class="headerRow" style="padding-left: 15px; margin-left: 0px;">
+			<h1><font color="#00667f" style="font-weight: bold">SVO-Art</font>
+			</h1>
+		</div>						
+	</div>
+</header>
+	<div class="container">	
+	
+	<div ng-repeat="x in vm.data" ng-if="$index % 3 == 0"  class="row top-buffer" >
+	<div class="col-sm-5"   ng-mouseover="hoverIn(vm.data,$index)" ng-mouseleave="hoverOut(vm.data,$index)" ng-model="vm.entity.n" ng-click="addData(vm.data,$index)">
+	<P>
+		<input class = "square glow-img " 	type="image" src="{{vm.imgSrc[$index]}}" />
+		 <span style="color:#00667f;font-weight: bold"  ng-show="vm.open[$index]" >{{vm.object}}</span>		
+	</P>		
+	</div>
+	<div class="col-sm-1" ></div>
+	<div class="col-sm-5"  ng-if="vm.data.length > ($index + 1)" ng-mouseover="hoverIn(vm.data,$index+1)" ng-mouseleave="hoverOut(vm.data,$index+1)" ng-click="addData(vm.data,$index+1)">
+	<P>
+		<input class = "square glow-img " 	type="image" src="{{vm.imgSrc[$index+1]}}" />
+		 <span style="color:#00667f;font-weight: bold" ng-show="vm.open[$index+1]" >{{vm.object}}</span>		
+	</P>		
+	</div>
+	<div class="col-sm-1" ></div>
+	<div class="col-sm-5"  ng-if="vm.data.length > ($index + 2)"  ng-mouseover="hoverIn(vm.data,$index+2)" ng-mouseleave="hoverOut(vm.data,$index+2)" ng-click="addData(vm.data,$index+2)">
+	<P>
+		<input class = "square glow-img " 	type="image" src="{{vm.imgSrc[$index+2]}}" />
+		 <span style="color:#00667f;font-weight: bold" ng-show="vm.open[$index+2]" >{{vm.object}}</span>		
+	</P>		
+	</div>
+	<div class="col-sm-1" ></div>
+</div>
+</div>	
+</div>
